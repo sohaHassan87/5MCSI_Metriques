@@ -1,1 +1,126 @@
+html {
+    font-size: 62.5%;
+
+}
+body *{
+    box-sizing:border-box;
+}
+ /* Etoile (body*c'est un selecteur qui permet d'appliquer la valeur choisie sur tous les élement de la balise*/
+ /*Styles du modèle de démo*/
+ 
+body {
+    font-size:1.6rem;
+    background-color:#eee;
+    color:#555;
+    font-family:arial,sans-serif;
+}
+header{
+    background-color:#ddd;
+    border:1px solid #dd5735;
+    text-align: center;
+    padding:2rem;
+    
+}
+h1{
+    color:#dd5735;
+}
+.container{
+    width:980px;
+    margin:auto;
+    padding:2rem;
+    background-color:#fff;
+}
+
+
+footer{
+    background-color:#ddd;
+    border:1px solid #555;
+    text-align:center;
+    padding:2rem;
+}
+
+/* Mise en forme du formulaire */
+
+form {
+    width: 70%;
+    margin: 4rem auto;
+}
+
+form, fieldset {
+    padding: 1em;
+    border: 1px solid black;
+}
+fieldset{
+margin-bottom:2rem;
+}
+input[type="text"],input[type="email"], input[type="password"],textarea,select,input[type="date"]{
+    border:1px solid black;
+    border-radius: 5px;
+}
+input[type="text"],input[type="email"],textarea{
+    width:100%;
+    margin-bottom:2rem;
+    padding:0.5em;
+}
+input[type="password"]{
+    width:50%;
+    margin-bottom:2rem;
+    padding:0.5em;
+    
+}
+label[for="pwd"],label[for="avatar"] ,lebel[for="password"]  {
+    display:block;
+    margin-top:2rem;
+}
+abbr {
+    font-size: 1.8rem;
+    color: red;
+}
+label{
+    display:inline-block;
+    margin-bottom:1rem;
+}
+p{
+    margin-top:0;
+}
+
+
+.flex{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:1rem;
+    
+}
+input[type="submit"]{
+    background-color:#dd5735;
+}
+    input[type="reset"]{
+        background-color:grey;
+    }
+
+
+
+input[type="submit"], input[type="reset"] {
+    border: none;
+    padding: 1em 3em;
+    color: white;
+    margin: 0 2rem;
+}
+.valid{
+    display:flex;
+    justify-content:center;
+    margin:auto 4rem;
+}
+
+textarea{
+    resize:vertical;
+}
+.no-border{
+    border:none;
+}
+label[for="newletter"]{
+    margin-right:2rem;
+    
+}
+
 
