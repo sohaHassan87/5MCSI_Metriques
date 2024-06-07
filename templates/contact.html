@@ -1,1 +1,81 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Les formulaires</title>
+        <meta name="description" content="">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body> 
+    <!--un commentaire en HTML  -->
+     <header>
+            <h1>Formulaire</h1>
+            <p>Découverte des balises principales</p>
+        </header>
+        <main class="container">
+            <form method="post" enctype="multipart/form-data" action="">
+                <p>Les chapms avec <abbr>*</abbr>sont obligatoires.</p>
+                <fieldset><!-- elle permet de mettre un cadre dans un formulaire-->
+                <legend>Info persos</legend> 
+                <p>Civilité<abbr title="champ obligatoire">*</abbr></p>
+                <div class="flex">
+                <label for="mme">Madame</label>
+                <input type="radio" id="mme" name="civilite" required>
+                
+                 <label for="mr">Monsieur</label>
+                    <input type="radio" id="mr" name="civilite" required>
+                    
+                    <label for="nc">N./C.</label>
+                    <input type="radio" id="nc" name="civilite" required>
+                    </div>
+                    <label for="prenom">prénom <abbr title="champ obligatoire">*</abbr></label>
+                    <input type="text" id="prenom" required autofocus autocomplete>
+                    
+                    <label for="nom">Nom<abbr title="champ obligatoire">*</abbr></laber>
+                    <input type="text" id="nom" required autocomplete>
+                    
+                    <label for="mail">Email<abbr title="champ obligatoire">*</abbr></label>
+                    <input type="email" id="mail" required autocomplete>
+                    
+                    <label for="pwd">choisissez votre mot de passe</label>
+                    <input type="password" id="pwd">
+                    
+                    <label for="birth">Date de naissance 
+                    <input type="date" id="birth"></label>
+                    
+                    <label for="avatar">Choisir une photo de profil</label>
+                    <input type="file" id="avatar" multiple="multiple">
+                    
+                </fieldset>
+                
+              <fieldset class="no-border">
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">je souhaite recevoir la newsletter</label>
+                     <label for="frequency">Fréquence d'envoi</label>
+                    <select name="" id="frequency">
+                        <option value="choice">Faites votre choix</option>
+                        <option value="daily">Quotidienne</option>
+                        <option value="weekly">Hebdomadaire</option>
+                        <option value="monthly">Mensuelle</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    
+                    <label for="msg">Vous pouvez nous laisser un message ci-dessous:</label>
+                    <textarea id="msg"></textarea>
+                    
+                </fieldset>
+                <div class="valid"> 
+                <input type="submit" value="Valider">
+                <input type="reset" value="annuler">
+                </div>
+            </form>
+            
+        </main>
+        <footer>
+             <img src="img/logo-3wa.png" alt="Logo de la 3WA">
+            <p>Ce matériel pédagogique est la proprié classté de la 3W Academy. Cet exercice a été réalisé par</p>
+        </footer>
+    </body>
+</html>
